@@ -27,23 +27,67 @@ a{
     color: var(--cor-de-link);
 }
 
-/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
+.tudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+    position: absolute;
+    border: 3px solid blue;
+}
 
-Lo que es el BEM?
-
-BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
-desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
-independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
-con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
-
-Enlace de la documentación oficial!
-https://en.bem.info/methodology/quick-start/*/
 
 /*Sección Menu*/
 
-section.menu{
-
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: black;
+    padding: 32px 0px;
+    gap: 611px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    border: 2px solid red;
 }
+
+.menu__header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    border: 3px double rgb(252, 104, 104);
+    color: white;
+}
+
+.menu__list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    color: white;
+    border: 3px double rgb(252, 104, 104);
+}
+
+.link{
+    color: white;
+}
+.link:hover{
+text-decoration: underline;
+}
+
 
 /*Sección Title*/
 
